@@ -1,4 +1,3 @@
-import React from "react";
 import Hometemplate from "./Hometemplate";
 
 export default {
@@ -9,7 +8,7 @@ export default {
 const BannerComp = () => {
   return (
     <>
-      <p>This is content</p>
+      <p>This is banner</p>
     </>
   );
 };
