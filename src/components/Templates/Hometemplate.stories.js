@@ -9,7 +9,7 @@ export default {
 const BannerComp = () => {
   return (
     <>
-      <p>This is banner</p>
+      <p>This is content</p>
     </>
   );
 };
