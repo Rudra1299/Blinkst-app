@@ -10,7 +10,7 @@ import { Button } from "@mui/material";
 const cardStyle = {
   width: "286px",
   height: "465px",
-  "&hover": {
+  "&:hover": {
     backgroundColor: "#f1f6f4",
   },
 };

@@ -8,8 +8,15 @@ function LogoutButton() {
   return (
     isAuthenticated && (
       <Button
-        sx={{ background: "#2ce080" }}
-        variant="contained"
+        sx={{
+          color: "#000000",
+          textTransform: "none",
+          "&hover": {
+            border: "1px",
+            borderBottomColor: "#2ce080",
+          },
+        }}
+        variant="text"
         onClick={() => {
           logout({ returnTo: window.location.origin });
         }}

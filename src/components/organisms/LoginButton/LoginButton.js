@@ -8,8 +8,15 @@ function LoginButton(props) {
   return (
     !isAuthenticated && (
       <Button
-        sx={{ backgroundColor: "#2ce080" }}
-        variant="contained"
+        sx={{
+          color: "#000000",
+          textTransform: "none",
+          "&hover": {
+            border: "1px",
+            borderBottomColor: "#2ce080",
+          },
+        }}
+        variant="text"
         onClick={loginWithRedirect}
       >
         Log in
