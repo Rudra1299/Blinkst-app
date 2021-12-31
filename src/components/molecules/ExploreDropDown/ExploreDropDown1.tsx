@@ -13,7 +13,7 @@ const gridStyle = {
   },
 };
 
-function ExploreDropDown(props) {
+function ExploreDropDown(props: any) {
   return (
     <Paper
       sx={{
@@ -27,13 +27,7 @@ function ExploreDropDown(props) {
           <RocketLaunchIcon />
           <Link
             to="/book/enterpreneurship"
-            style={{
-              textDecoration: "none",
-              color: "#000000",
-              "&:hover": {
-                color: "#116be9",
-              },
-            }}
+            style={{ textDecoration: "none", color: "#000000" }}
           >
             enterpreneurship
           </Link>

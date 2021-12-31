@@ -9,18 +9,34 @@ import { Button } from "@mui/material";
 
 const cardStyle = {
   width: "286px",
-  height: "466px",
+  height: "465px",
   "&hover": {
-    background: "#f1f6f4",
+    backgroundColor: "#f1f6f4",
   },
 };
 
+const ButtonStyle = {
+  borderRadius: "0px",
+  color: "#116be9",
+  backgroundColor: "white",
+  border: 1,
+  borderColor: "#f1f6f4",
+  "&:hover": {
+    color: "white",
+    backgroundColor: "#116be9",
+  },
+};
+
+const CardContentStyle = {
+  border: 1,
+  borderColor: "#f1f6f4",
+};
 export default function BookCard(props) {
   const { book, buttonText } = props;
   return (
     <Card sx={cardStyle}>
       <CardMedia component="img" image={book.image} alt={book.imageTitle} />
-      <CardContent>
+      <CardContent sx={CardContentStyle}>
         <Grid container direction="column" spacing={2}>
           <Grid item>
             <Typography gutterBottom variant="h5" component="div">
@@ -51,9 +67,8 @@ export default function BookCard(props) {
         {buttonText.length > 0 && (
           <Button
             fullWidth
-            sx={{ borderRadius: "0px" }}
+            sx={ButtonStyle}
             variant="contained"
-            color="primary"
             onClick={props.onClick}
           >
             {buttonText}
