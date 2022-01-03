@@ -110,7 +110,7 @@ function Mylibrary() {
                   buttonText={
                     UserBook.status === "finished"
                       ? "Read Again"
-                      : "finish read"
+                      : "Finish read"
                   }
                   book={UserBook}
                   onClick={() =>

@@ -5,7 +5,7 @@ import LogoutButton from "../LogoutButton/LogoutButton";
 function HomeHeader() {
   return (
     <>
-      <Grid container justifyContent="space-around">
+      <Grid container justifyContent="space-around" alignItems="center">
         <Grid items xs={8} md={8}>
           <Header />
         </Grid>

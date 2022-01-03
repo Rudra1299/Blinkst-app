@@ -19,6 +19,7 @@ const ButtonStyle = {
   borderRadius: "0px",
   color: "#116be9",
   backgroundColor: "white",
+  textTransform: "none",
   border: 1,
   borderColor: "#f1f6f4",
   "&:hover": {
