@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/molecules/Footer/Footer";
 import HomeHeader from "../components/organisms/HomeHeader/HomeHeader";
-import MainContent from "../components/organisms/MainContent/MainContent";
+import MainContent from "../Routes/MainContent";
 import HomeTemplate from "../components/Templates/Hometemplate";
 function HomePage() {
   return (

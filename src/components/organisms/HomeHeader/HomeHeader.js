@@ -5,13 +5,17 @@ import LogoutButton from "../LogoutButton/LogoutButton";
 function HomeHeader() {
   return (
     <>
-      <Grid container justifyContent="space-around" alignItems="center">
+      <Grid container justifyContent="space-between" alignItems="center">
         <Grid items xs={8} md={8}>
           <Header />
         </Grid>
-        <Grid items xs={8} md={4}>
-          <LogoutButton />
-          <LoginButton />
+        <Grid items container xs={8} md={4} justifyContent="center">
+          <Grid items>
+            <LogoutButton />
+          </Grid>
+          <Grid items>
+            <LoginButton />
+          </Grid>
         </Grid>
       </Grid>
     </>
